@@ -7,12 +7,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const App = () => (
-  <Container className="xxl">
-  <Row></Row>
-  <Row></Row>
-  <Row>
   
-    <Button variant="success" size="lg">Click ME!</Button>{''}
+  <Container className="container-fluid">
+    <style type="text/css">
+  {`
+    .btn-huge {
+      padding: 3rem 5rem;
+      font-size: 4rem;
+    }
+  `}
+  </style>
+  <Row className="position-absolute top-50 start-50 translate-middle">
+  
+    <Button variant="success" size="huge" block>Click ME!</Button>{''}
   
   </Row>
   </Container>
