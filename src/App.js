@@ -21,18 +21,20 @@ const App = () => (
   <Row>
     <Card className=''>
       <Card.Body>
-        <Card.Title>Number of Clicks</Card.Title>
+        <Card.Title>{count}</Card.Title>
       </Card.Body>
     </Card>
   </Row>
   <Row className="position-absolute top-50 start-50 translate-middle">
   
-    <Button variant="success" size="huge" block>Click ME!</Button>{''}
+    <Button variant="success" size="huge" block onClick={updateCount}>Click ME!</Button>{''}
   
   </Row>
   </Container>
     
 
 );
+
+function updateCount()
 
 export default App;
