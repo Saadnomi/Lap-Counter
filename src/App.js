@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
+var count = 0;
+
 const App = () => (
   
   <Container className="container-fluid">
@@ -35,6 +37,8 @@ const App = () => (
 
 );
 
-function updateCount()
+function updateCount(){
+  count += 1;
+}
 
 export default App;
