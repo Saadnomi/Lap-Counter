@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import { Component } from 'react';
 
-var count = 0;
 
 class numClicks extends Component{
   state = {
@@ -29,7 +28,7 @@ class numClicks extends Component{
   <Row>
     <Card className=''>
       <Card.Body>
-        <Card.Title>{this.state.count}</Card.Title>
+        <Card.Title>{this.state.numberClicks}</Card.Title>
       </Card.Body>
     </Card>
   </Row>
@@ -45,7 +44,7 @@ class numClicks extends Component{
 
 
 function updateCount(){
-  this.state.count += 1;
+  this.state.numberClicks += 1;
 }
 
 export default numClicks;
