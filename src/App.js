@@ -14,11 +14,10 @@ class numClicks extends Component{
   state = {
     numberClicks: 0
   };
-}
 
-const App = () => (
-  
-  <Container className="container-fluid">
+  render(){
+    return(
+      <Container className="container-fluid">
     <style type="text/css">
   {`
     .btn-huge {
@@ -30,7 +29,7 @@ const App = () => (
   <Row>
     <Card className=''>
       <Card.Body>
-        <Card.Title>{count}</Card.Title>
+        <Card.Title>{this.state.count}</Card.Title>
       </Card.Body>
     </Card>
   </Row>
@@ -40,12 +39,13 @@ const App = () => (
   
   </Row>
   </Container>
-    
-
-);
-
-function updateCount(){
-  count += 1;
+    )
+  }
 }
 
-export default App;
+
+function updateCount(){
+  this.state.count += 1;
+}
+
+export default numClicks;
