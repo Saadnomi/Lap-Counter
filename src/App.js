@@ -34,7 +34,7 @@ class numClicks extends Component{
   </Row>
   <Row className="position-absolute top-50 start-50 translate-middle">
   
-    <Button variant="success" size="huge" block onClick={updateCount}>Click ME!</Button>{''}
+    <Button variant="success" size="huge" block onClick={this.updateCount}>Click ME!</Button>{''}
   
   </Row>
   </Container>
@@ -44,7 +44,7 @@ class numClicks extends Component{
 
 
 function updateCount(){
-  this.state.numberClicks += 1;
+  this.setState({numberClicks: this.state.numberClicks+=1});
 }
 
 export default numClicks;
