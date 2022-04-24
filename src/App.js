@@ -40,11 +40,13 @@ class numClicks extends Component{
   </Container>
     )
   }
+  updateCount = () => {
+    var click = this.state.numberClicks
+    this.setState({numberClicks: click+1});
+  }
 }
 
 
-function updateCount(){
-  this.setState({numberClicks: this.state.numberClicks+=1});
-}
+ 
 
 export default numClicks;
