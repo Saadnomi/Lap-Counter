@@ -35,6 +35,7 @@ class numClicks extends Component{
   <Row className="position-absolute top-50 start-50 translate-middle">
   
     <Button variant="success" size="huge" block onClick={this.updateCount}>Click ME!</Button>{''}
+    <Button variant="primary" size="small" block onClick={this.reset}>Reset</Button>{''}
   
   </Row>
   </Container>
@@ -43,6 +44,10 @@ class numClicks extends Component{
   updateCount = () => {
     var click = this.state.numberClicks
     this.setState({numberClicks: click+1});
+  }
+
+  reset = () => {
+    this.setState({numberClicks: 0});
   }
 }
 
