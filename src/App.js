@@ -26,7 +26,7 @@ class numClicks extends Component{
   `}
   </style>
   <Row>
-    <Card className=''>
+    <Card className='text-center'>
       <Card.Body>
         <Card.Title>{this.state.numberClicks}</Card.Title>
       </Card.Body>
